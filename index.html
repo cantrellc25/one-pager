@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-image:url(images/backround.jpg);
+}
+
+/* Header/Blog Title */
+.header {
+ 
+  padding: 30px;
+  text-align: center;
+  background-color: whitesmoke;
+  
+}
+
+.header h1 {
+  font-size: 50px;
+ 
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:darkcyan;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Dogs</h1>
+  <p>Learn About The Cutest Animals On Earth</p>
+</div>
+
+<div class="topnav">
+  <a href="https://youtu.be/b43PbeSekDo">Learn About Dogs</a>
+  <a href="https://youtu.be/2O7jdS0kzCI">Funny Dog Videos</a>
+  <a href="https://youtu.be/JJVFSWHZYjY">100 Dog Facts</a>
+  <a href="https://youtu.be/1oDGa2yPb2g" style="float:right">How To Train A Dog</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>How To Train A Dog</h2>
+      <h5>Title description, Feb. 2, 2022, 11:02 a.m.</h5>
+      <div class="fakeimg" style="height: 250px;"><img src="images/dog1.jpg"></div>
+      <p>Dog Training</p>
+      <p>Many people love dogs and would want them by there sides at all times but, First you need to learn how to raise a healthy dog. for example make sure you feed him 3 times a day and fill up the water whenever you see it getting low.  </p>
+    </div>
+    <div class="card">
+      <h2>Types Of Dogs </h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg"style="height: 400 px;px;">
+      <img src="images/dog1234.jpg"></div>
+      <p>The Varierty</p>
+      <p> Evrypone has their own opion on dogs and what bredds are their favorite. but did you know that their are 360 offically reconized breeds. I Personally have 2 dogs, 1 small shitzu and 1 big bernese mountain dog.  .</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Dog Toys</h2>
+      <div class="" style="height:10px;"></div>
+     ,<img src="images/dogtoys.jpg" width=70% alt="doggy toys">
+      <p>Here is one of my dogs favorite toy!</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="" style="height: 10px;"><p></p></div>
+      <img src="images/populardog.jpg" width=100% alt= "dog walk">
+      
+      <div class="fakeimg"><p>Buetiful place to walk the dog</p></div>
+      <img src="images/100_1101.jpg" width=100%>
+      
+      <div class="fakeimg"><p></p></div>
+      <img src="" width=100%>
+    </div>
+    <div class="card">
+      <h3>Dog Food</h3>
+      <p>Go to your local petsmart to find the best dog food. </p>
+  
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+ <p>Copyright 2022<br>
+   Walpole Highschool Web Design 
+ </p>
+</div>
+
+</body>
+</html>
